@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>zhaopinser</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 配置  dati   DatiComboListServlet -->	
+  <servlet>
+  	<servlet-name>datiComboListServlet</servlet-name>
+  	<servlet-class>com.web.DatiComboListServlet</servlet-class>
+  </servlet>
+   
+ <servlet-mapping>
+  	<servlet-name>datiComboListServlet</servlet-name>
+  	<url-pattern>/datiComboList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置DatiDeleteServlet -->	
+  <servlet>
+  	<servlet-name>datiDeleteServlet</servlet-name>
+  	<servlet-class>com.web.DatiDeleteServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>datiDeleteServlet</servlet-name>
+  	<url-pattern>/datiDelete</url-pattern>
+  </servlet-mapping>
+  <!-- 配置DatiListServlet -->	
+  <servlet>
+  	<servlet-name>datiListServlet</servlet-name>
+  	<servlet-class>com.web.DatiListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>datiListServlet</servlet-name>
+  	<url-pattern>/datiList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置DatiSaveServlet -->	
+  <servlet>
+  	<servlet-name>datiSaveServlet</servlet-name>
+  	<servlet-class>com.web.DatiSaveServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>datiSaveServlet</servlet-name>
+  	<url-pattern>/datiSave</url-pattern>
+  </servlet-mapping>
+  <!-- 配置LoginServlet -->	
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<servlet-class>com.web.LoginServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>loginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <!-- 配置  jianli   JianliComboListServlet -->	
+  <servlet>
+  	<servlet-name>jianliComboListServlet</servlet-name>
+  	<servlet-class>com.web.JianliComboListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>jianliComboListServlet</servlet-name>
+  	<url-pattern>/jianliComboList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置JianliDeleteServlet -->	
+  <servlet>
+  	<servlet-name>jianliDeleteServlet</servlet-name>
+  	<servlet-class>com.web.JianliDeleteServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>jianliDeleteServlet</servlet-name>
+  	<url-pattern>/jianliDelete</url-pattern>
+  </servlet-mapping>
+  <!-- 配置JianliListServlet -->	
+  <servlet>
+  	<servlet-name>jianliListServlet</servlet-name>
+  	<servlet-class>com.web.JianliListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>jianliListServlet</servlet-name>
+  	<url-pattern>/jianliList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置JianliSaveServlet -->	
+  <servlet>
+  	<servlet-name>jianliSaveServlet</servlet-name>
+  	<servlet-class>com.web.JianliSaveServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>jianliSaveServlet</servlet-name>
+  	<url-pattern>/jianliSave</url-pattern>
+  </servlet-mapping>
+  <!-- 配置  juanti   JuantiComboListServlet -->	
+  <servlet>
+  	<servlet-name>juantiComboListServlet</servlet-name>
+  	<servlet-class>com.web.JuantiComboListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>juantiComboListServlet</servlet-name>
+  	<url-pattern>/juantiComboList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置JuantiDeleteServlet -->	
+  <servlet>
+  	<servlet-name>juantiDeleteServlet</servlet-name>
+  	<servlet-class>com.web.JuantiDeleteServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>juantiDeleteServlet</servlet-name>
+  	<url-pattern>/juantiDelete</url-pattern>
+  </servlet-mapping>
+  <!-- 配置JuantiListServlet -->	
+  <servlet>
+  	<servlet-name>juantiListServlet</servlet-name>
+  	<servlet-class>com.web.JuantiListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>juantiListServlet</servlet-name>
+  	<url-pattern>/juantiList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置JuantiNeirongListServlet -->	
+  <servlet>
+  	<servlet-name>juantiNeirongListServlet</servlet-name>
+  	<servlet-class>com.web.JuantiNeirongListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>juantiNeirongListServlet</servlet-name>
+  	<url-pattern>/juantiNeirongList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置JuantiSaveServlet -->	
+  <servlet>
+  	<servlet-name>juantiSaveServlet</servlet-name>
+  	<servlet-class>com.web.JuantiSaveServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>juantiSaveServlet</servlet-name>
+  	<url-pattern>/juantiSave</url-pattern>
+  </servlet-mapping>
+  <!-- 配置  qiuzhi   QiuzhiComboListServlet -->	
+  <servlet>
+  	<servlet-name>qiuzhiComboListServlet</servlet-name>
+  	<servlet-class>com.web.QiuzhiComboListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>qiuzhiComboListServlet</servlet-name>
+  	<url-pattern>/qiuzhiComboList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置QiuzhiDeleteServlet -->	
+  <servlet>
+  	<servlet-name>qiuzhiDeleteServlet</servlet-name>
+  	<servlet-class>com.web.QiuzhiDeleteServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>qiuzhiDeleteServlet</servlet-name>
+  	<url-pattern>/qiuzhiDelete</url-pattern>
+  </servlet-mapping>
+  <!-- 配置QiuzhiListServlet -->	
+  <servlet>
+  	<servlet-name>qiuzhiListServlet</servlet-name>
+  	<servlet-class>com.web.QiuzhiListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>qiuzhiListServlet</servlet-name>
+  	<url-pattern>/qiuzhiList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置QiuzhiSaveServlet -->	
+  <servlet>
+  	<servlet-name>qiuzhiSaveServlet</servlet-name>
+  	<servlet-class>com.web.QiuzhiSaveServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>qiuzhiSaveServlet</servlet-name>
+  	<url-pattern>/qiuzhiSave</url-pattern>
+  </servlet-mapping>
+  <!-- 配置  shijuan   ShijuanComboListServlet -->	
+  <servlet>
+  	<servlet-name>shijuanComboListServlet</servlet-name>
+  	<servlet-class>com.web.ShijuanComboListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>shijuanComboListServlet</servlet-name>
+  	<url-pattern>/shijuanComboList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置ShijuanDeleteServlet -->	
+  <servlet>
+  	<servlet-name>shijuanDeleteServlet</servlet-name>
+  	<servlet-class>com.web.ShijuanDeleteServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>shijuanDeleteServlet</servlet-name>
+  	<url-pattern>/shijuanDelete</url-pattern>
+  </servlet-mapping>
+  <!-- 配置ShijuanListServlet -->	
+  <servlet>
+  	<servlet-name>shijuanListServlet</servlet-name>
+  	<servlet-class>com.web.ShijuanListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>shijuanListServlet</servlet-name>
+  	<url-pattern>/shijuanList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置ShijuanSaveServlet -->	
+  <servlet>
+  	<servlet-name>shijuanSaveServlet</servlet-name>
+  	<servlet-class>com.web.ShijuanSaveServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>shijuanSaveServlet</servlet-name>
+  	<url-pattern>/shijuanSave</url-pattern>
+  </servlet-mapping>
+  <!-- 配置  shiti   ShitiComboListServlet -->	
+  <servlet>
+  	<servlet-name>shitiComboListServlet</servlet-name>
+  	<servlet-class>com.web.ShitiComboListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>shitiComboListServlet</servlet-name>
+  	<url-pattern>/shitiComboList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置ShitiDeleteServlet -->	
+  <servlet>
+  	<servlet-name>shitiDeleteServlet</servlet-name>
+  	<servlet-class>com.web.ShitiDeleteServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>shitiDeleteServlet</servlet-name>
+  	<url-pattern>/shitiDelete</url-pattern>
+  </servlet-mapping>
+  <!-- 配置ShitiListServlet -->	
+  <servlet>
+  	<servlet-name>shitiListServlet</servlet-name>
+  	<servlet-class>com.web.ShitiListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>shitiListServlet</servlet-name>
+  	<url-pattern>/shitiList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置ShitiSaveServlet -->	
+  <servlet>
+  	<servlet-name>shitiSaveServlet</servlet-name>
+  	<servlet-class>com.web.ShitiSaveServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>shitiSaveServlet</servlet-name>
+  	<url-pattern>/shitiSave</url-pattern>
+  </servlet-mapping>
+  <!-- 配置UserComboListServlet -->	
+  <servlet>
+  	<servlet-name>userComboListServlet</servlet-name>
+  	<servlet-class>com.web.UserComboListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>userComboListServlet</servlet-name>
+  	<url-pattern>/userComboList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置UserDeleteServlet -->	
+  <servlet>
+  	<servlet-name>userDeleteServlet</servlet-name>
+  	<servlet-class>com.web.UserDeleteServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>userDeleteServlet</servlet-name>
+  	<url-pattern>/userDelete</url-pattern>
+  </servlet-mapping>
+  <!-- 配置UserListServlet -->	
+  <servlet>
+  	<servlet-name>userListServlet</servlet-name>
+  	<servlet-class>com.web.UserListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>userListServlet</servlet-name>
+  	<url-pattern>/userList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置UserSaveServlet -->	
+  <servlet>
+  	<servlet-name>userSaveServlet</servlet-name>
+  	<servlet-class>com.web.UserSaveServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>userSaveServlet</servlet-name>
+  	<url-pattern>/userSave</url-pattern>
+  </servlet-mapping>
+  <!-- 配置UserZhuceServlet -->	
+  <servlet>
+  	<servlet-name>userZhuceServlet</servlet-name>
+  	<servlet-class>com.web.UserZhuceServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>userZhuceServlet</servlet-name>
+  	<url-pattern>/userZhuce</url-pattern>
+  </servlet-mapping>
+  <!-- 配置RoleComboListServlet -->	
+  <servlet>
+  	<servlet-name>roleComboListServlet</servlet-name>
+  	<servlet-class>com.web.RoleComboListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>roleComboListServlet</servlet-name>
+  	<url-pattern>/roleComboList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置RoleDeleteServlet -->	
+  <servlet>
+  	<servlet-name>roleDeleteServlet</servlet-name>
+  	<servlet-class>com.web.RoleDeleteServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>roleDeleteServlet</servlet-name>
+  	<url-pattern>/roleDelete</url-pattern>
+  </servlet-mapping>
+  <!-- 配置RoleListServlet -->	
+  <servlet>
+  	<servlet-name>roleListServlet</servlet-name>
+  	<servlet-class>com.web.RoleListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>roleListServlet</servlet-name>
+  	<url-pattern>/roleList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置RoleSaveServlet -->	
+  <servlet>
+  	<servlet-name>roleSaveServlet</servlet-name>
+  	<servlet-class>com.web.RoleSaveServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>roleSaveServlet</servlet-name>
+  	<url-pattern>/roleSave</url-pattern>
+  </servlet-mapping>
+  <!-- 配置  zhiwei   ZhiweiComboListServlet -->	
+  <servlet>
+  	<servlet-name>zhiweiComboListServlet</servlet-name>
+  	<servlet-class>com.web.ZhiweiComboListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>zhiweiComboListServlet</servlet-name>
+  	<url-pattern>/zhiweiComboList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置ZhiweiDeleteServlet -->	
+  <servlet>
+  	<servlet-name>zhiweiDeleteServlet</servlet-name>
+  	<servlet-class>com.web.ZhiweiDeleteServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>zhiweiDeleteServlet</servlet-name>
+  	<url-pattern>/zhiweiDelete</url-pattern>
+  </servlet-mapping>
+  <!-- 配置ZhiweiListServlet -->	
+  <servlet>
+  	<servlet-name>zhiweiListServlet</servlet-name>
+  	<servlet-class>com.web.ZhiweiListServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>zhiweiListServlet</servlet-name>
+  	<url-pattern>/zhiweiList</url-pattern>
+  </servlet-mapping>
+  <!-- 配置ZhiweiSaveServlet -->	
+  <servlet>
+  	<servlet-name>zhiweiSaveServlet</servlet-name>
+  	<servlet-class>com.web.ZhiweiSaveServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+  	<servlet-name>zhiweiSaveServlet</servlet-name>
+  	<url-pattern>/zhiweiSave</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
